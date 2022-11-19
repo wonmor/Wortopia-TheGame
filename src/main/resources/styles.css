@@ -1,0 +1,15 @@
+@font-face {
+    src: url("assets/LovelexieHandwritten.ttf");
+}
+    
+.label {
+    -fx-font-family: 'LovelexieHandwritten';
+}
+
+.button .text {
+    -fx-font-family: 'LovelexieHandwritten';
+}
+
+.text-field {
+    -fx-font-family: 'LovelexieHandwritten';
+}

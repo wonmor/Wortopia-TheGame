@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+  <children>
+    <AnchorPane fx:id="mainContainer" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fx:id="background" fitHeight="400.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <image>
+                  <Image url="@screens/Basic_Stickman_0.png" />
+               </image></ImageView>
+            <HBox id="wordBox" fx:id="wordBox" alignment="CENTER_LEFT" layoutX="358.0" layoutY="123.0" prefHeight="70.0" prefWidth="299.0" spacing="30.0">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="36.0" text="?">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="45.0" prefWidth="36.0" text="?">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="45.0" prefWidth="36.0" text="?">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="45.0" prefWidth="36.0" text="?">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="45.0" prefWidth="36.0" text="?">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox id="userInteractionBar" fx:id="userInteractionBar" alignment="CENTER" layoutX="387.0" layoutY="200.0" prefHeight="150.0" prefWidth="333.0" spacing="10.0" AnchorPane.bottomAnchor="49.0" AnchorPane.rightAnchor="4.0">
+               <children>
+                  <HBox id="textFieldBox" fx:id="textFieldBox" alignment="CENTER" prefHeight="73.0" prefWidth="301.0" spacing="15.0" style="-fx-border-color: gray;">
+                     <children>
+                        <TextField prefHeight="56.0" prefWidth="46.0" style="-fx-border-color: black;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField prefHeight="56.0" prefWidth="46.0" style="-fx-border-color: black;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField prefHeight="56.0" prefWidth="46.0" style="-fx-border-color: black;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField prefHeight="56.0" prefWidth="46.0" style="-fx-border-color: black;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField prefHeight="56.0" prefWidth="46.0" style="-fx-border-color: black;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <Button id="rescueButton" fx:id="rescueButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onClick" prefHeight="43.0" prefWidth="208.0" text="RESCUE MR. STICK!" visible="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Button id="startButton" fx:id="startButton" layoutX="468.0" layoutY="308.0" mnemonicParsing="false" onAction="#onClick" prefHeight="61.0" prefWidth="191.0" visible="false" />
+            <ImageView id="statusImage" fx:id="statusImage" fitHeight="73.0" fitWidth="313.0" layoutX="400.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="30.333333333333314" AnchorPane.rightAnchor="41.22760009765625">
+               <image>
+                  <Image url="@assets/SuccessText.png" />
+               </image>
+            </ImageView>
+            <Label id="errorMessage" fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="383.0" layoutY="316.0" prefHeight="45.0" prefWidth="299.0" text="NOT A VALID ENTRY!" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
